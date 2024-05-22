@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+	
+<head th:replace="/views/responsive/thymeleaf/fragments/common/head::head"/>
+<style>
+
+.container {
+      margin-left: 80px;   /* Adjust this value to move the container to the right */
+      margin-top: -40px; 
+      background-color:#ADD8E6;
+      width:1300px;    /*adjust to down*/              
+    }
+
+
+
+
+
+
+
+</style>
+<meta charset="ISO-8859-1">
+<title>PatientInformation</title>
+
+<body>
+
+
+
+<div th:replace= "/views/responsive/thymeleaf/fragments/common/sidebar::sidebar"> </div>
+<div th:replace= "/views/responsive/thymeleaf/fragments/common/header::header"> </div>
+
+
+<p style="margin-left:70px;">Patient details</p>
+<div class="container">
+<div class="container p-2 my-5 border">
+
+
+  <div  style="display: flex;">
+  <div>
+<div class="row row-col-5 "><!-- 1st row beg -->
+<div class="col">
+<select style="margin-left:-85px; width:180px; margin-top:10px;">
+<option>Title</option>
+<option>Mr.</option>
+<option>Ms.</option>
+<option>miss</option> 
+</select>
+</div> <!-- col1 ends -->
+
+
+
+<div class="col" >
+<input type="text" style="width:280px; margin-left:-20px; margin-top:7px;" placeholder="New Patientname">
+</div><!-- col2 close -->
+
+<div class="col"  >
+<input type="text" style="width:260px; margin-left:-16px; margin-top:7px;" placeholder="Last Name">
+</div>
+ <!-- col3 close -->
+ 
+ <div class="col" >
+<select style="margin-left:-15px; width:200px; margin-top:10px;">
+<option>Gender</option>
+<option>Male</option>
+<option>female</option>
+<option>others</option> 
+</select>
+</div>
+ <div class="col" style="margin-top:-10px;" >
+ 
+ <label for="birthday"></label>
+  <input type="date" id="birthday" style="margin-left:-15px; margin-top:-89px; width:180px;"name="birthday">
+ 
+ 
+ </div>
+ 
+
+</div><!-- 1st row close -->
+</div> <!-- semi flex -->
+</div>  <!-- display div flex -->
+
+<!-- 2nd row open -->
+
+<div  style="display: flex;">
+  <div>
+<div class="row row-col-5 ">
+
+   
+
+<div class="col">
+
+<input type="text" style="margin-top:7px; margin-left:-85px; width:90px;" placeholder="Years">
+
+</div> <!-- col1 close -->
+
+<div class="col">
+
+<input type="text" style="margin-top:7px; margin-left:-15px; width:80px;" placeholder="Months">
+
+</div><!-- col2 close -->
+
+<div class="col">
+
+<input type="text" style="margin-top:7px; margin-left:-15px; width:80px;" placeholder="Days">
+
+</div><!-- 3 col close -->
+
+<div class="col">
+
+<input type="number" style="margin-top:7px; margin-left:-15px; width:190px;" placeholder="Mobileno.">
+
+</div><!-- 4th col close -->
+
+<div class="col">
+<select style="margin-left:-15px; width:170px; margin-top:10px;">
+<option>Parent/HusbandName</option>
+<option>.</option>
+<option></option>
+<option></option> 
+</select>
+</div>    <!--5th col close-->
+<div class="col">
+
+<input type="text" style="margin-top:7px; margin-left:-15px; width:180px;" placeholder="Parent/Husbandname.">
+
+</div><!-- 6th col close -->
+
+<div class="col">
+<select style="margin-left:-20px; width:100px; margin-top:10px;">
+<option>Religion</option>
+<option>.</option>
+<option></option>
+<option></option> 
+</select>
+</div>  <!-- 7th col close -->
+
+<div class="col">
+<select style="margin-left:-10px; width:180px; margin-top:10px;">
+<option>Marital Status</option>
+<option>.</option>
+<option></option>
+<option></option> 
+</select>
+</div><!-- 8th col close -->
+
+</div> <!--  2nd row close-->
+
+<div class="row row-col-6 "><!-- 3rd row begins -->
+<div class="col">
+<select style="margin-left:-85px; width:180px; margin-top:10px;">
+<option>Indian</option>
+<option>japan</option>
+<option>nepal</option>
+<option>russian</option> 
+</select>
+</div>  <!-- 1col close -->
+
+<div class="col">
+<select style="margin-left:-75px; width:160px; margin-top:8px;">
+<option>BloodGroup</option>
+<option>A</option>
+<option>B</option>
+<option>o</option> 
+</select>
+</div>  <!-- 2col close -->
+
+
+<div class="col">
+<select style="margin-left:-85px; width:200px; margin-top:8px;">
+<option>Select Occupation</option>
+<option>doctor</option>
+<option>agri</option>
+<option>enginer</option> 
+</select>
+</div>  <!-- 3col close -->
+
+<div class="col">
+<select style="margin-left:-55px; width:200px; margin-top:8px;">
+<option>Andhrapradesh</option>
+<option></option>
+<option></option>
+<option></option> 
+</select>
+</div>       <!-- 4col close -->
+<div class="col">
+<select style="margin-left:-29px; width:170px; margin-top:8px;">
+<option>select city</option>
+<option></option>
+<option></option>
+<option></option> 
+</select>
+</div><!-- 4 col close -->
+
+  <div class="col">
+
+<input type="text" style="margin-top:10px; margin-left:-25px; width:180px;" placeholder="Village">
+
+</div>   <!-- 5th col close -->
+
+</div><!-- 3rd row close -->
+
+<div class="row row-col-5 ">
+<div class="col">
+<div class="form-floating mb-3 mt-3" style="width:300px; padding-bottom: 20px; margin-left:-80px;">
+    <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here"></textarea>
+    <label for="comment">Comments</label>
+</div>
+</div>  <!-- col1 close -->
+
+
+
+<div class="col">
+<select style="margin-left:-15px; width:150px; margin-top:20px;">
+<option>ID proof</option>
+<option></option>
+<option></option>
+<option></option> 
+</select>
+</div>   <!-- col2 close -->
+
+<div class="col">
+
+<input type="text" style="margin-top:20px; margin-left:-35px; width:180px;" placeholder="Enter ID number">
+
+</div><!-- col3 close -->
+
+
+<div class="col">
+
+ <input type="checkbox" style="margin-left:-10px; margin-top:30px;"  value="option1" checked>
+      <label class="form-check-label" for="radio1">Sms Notification</label>
+
+
+</div>  <!-- col4 close -->
+
+
+<div class="col">
+
+<input type="text" style="margin-top:20px; margin-left:-35px; width:180px;" placeholder="Health Issue">
+
+</div>
+
+    <!-- col5 close -->
+
+</div>  <!-- row 4 close -->
+
+
+
+<div class="row row-col-3 ">
+
+
+
+
+ <div class="col" style="margin-top:-45px;">
+<select style="margin-top:-130px; margin-left:280px;">
+<option>Referral Type</option>
+<option></option>
+<option></option>
+<option></option> 
+</select>
+</div>  <!-- col1 close -->
+
+ <div class="col" style="margin-top:-45px;">
+<select style="margin-top:-120px; margin-left:-10px; width:220px;">
+<option>Select organization</option>
+<option></option>
+<option></option>
+<option></option> 
+</select>
+</div> <!-- col2 close -->
+
+<div class="col" style="margin-top:-45px;">
+<select style="margin-top:-120px; margin-left:10px; width:250px;">
+<option>Patient Tariff</option>
+<option></option>
+<option></option>
+<option></option> 
+</select>
+</div> 
+  
+</div>   <!--row5 close-->
+
+<div class="row row-col-3 ">
+<div class="col">
+
+<p style="margin-left:-90px;">VISIT TYPE:NEW VISIT</p>
+
+</div> <!-- col1 close -->
+
+<div class="col">
+
+<p style="margin-left:-100px;">REGISTRATION VALIDITY:NO-()</p>
+
+</div> <!-- COL2 CLOSE -->
+<div class="col">
+
+<p style="margin-left:-810px; margin-top:30px;">CONSULTANT VALIDITY:NO-()</p>
+
+</div>
+
+
+</div><!-- last row close -->
+
+</div>  <!-- semi flex close -->
+</div>  <!-- display flex -->
+
+</div><!-- small cont close -->
+</div>  <!-- large container close -->
+ 
+ <p style="margin-top:-50px; margin-left:70px;">Appointment Details</p>
+ <div class="container">
+<div class="container p-2 my-5 border">
+
+<div  style="display: flex;">
+  <div>
+  
+  <div class="row row-col-3 "><!-- row 1 -->
+  <div class="col">
+  
+  <select style="margin-left:-90px; width:190px;">
+  
+  <option>Select Location</option>
+           <option></option>
+           <option></option>
+           <option></option> 
+  
+  </select>
+  
+  </div>  <!-- col1 close -->
+  
+   <div class="col" style="margin-top:-25px; margin-left:-10px;" >
+ 
+ <label for="birthday"></label>
+  <input type="date" id="birthday" name="birthday">
+ 
+ 
+ </div> <!-- col2 close -->
+ 
+ <div class="col">
+ 
+  <input type="text" style="margin-left:-10px;" placeholder="Token">
+ 
+ </div> <!-- col3 close -->
+ 
+   <div class="col">
+  
+  <select style="margin-left:-10px; width:190px;">
+  
+  <option>Select Consultant</option>
+           <option></option>
+           <option></option>
+           <option></option> 
+  
+  </select>
+  
+  </div>  <!-- col4 close -->
+  
+  <div class="col">
+ 
+  <input type="text" style="margin-left:-20px;" placeholder="Doctors code">
+ 
+ </div>  <!-- col5 close -->
+ <div class="col">
+ 
+  <input type="text" style="margin-left:-10px;" placeholder="Specialization">
+ 
+ </div><!-- 6th col close -->
+  </div>   <!-- row close -->
+  
+ 
+  
+  </div>  <!-- small flex ends 3-->
+  </div>  <!-- display -flex ends3 -->
+
+
+
+</div>  <!-- small cont close 2 -->
+</div>   <!-- large container close 2 -->
+ 
+ <p style="margin-top:-50px; margin-left:65px;">Registration fees</p>
+ <div class="container">
+<div class="container p-2 my-5 border">
+
+
+<div  style="display: flex;">
+  <div>
+  
+  <div class="row row-col-4 ">
+  
+  <p style="margin-left:-99px;">Registration fees:</p>
+  <div class="col" style="margin-left:22px; margin-top:-40px;">
+  
+ <input type="text"  placeholder=""></div>
+  
+  </div><!-- col1 close -->
+    <p style="margin-left:220px; margin-top:-40px;">Disc():</p>
+  <div class="col" style="margin-left:270px; margin-top:-40px;">
+  
+ <input type="text"  placeholder=""></div> <!-- col2 close -->
+  
+  <p style="margin-left:500px; margin-top:-30px;"> Disc():</p>
+  <div class="col" style="margin-left:545px; margin-top:-40px;">
+   <input type="text"  placeholder="">
+  </div>
+  
+  <p style="margin-left:750px; margin-top:-30px;">Reg Final Amount:</p>
+  <div class="col" style="margin-left:890px; margin-top:-40px;">
+  <input type="text"  placeholder="">
+  </div><!-- 3rd col close -->
+ 
+ </div>   <!-- row 1 close -->
+ 
+  
+  <div class="row row-col-4 "><!-- row 2 open -->
+  
+ <p style="margin-top:40px; margin-left:-1186px;">Consultationfees:</p>
+<div class="col" style="margin-top:40px; margin-left:-59px;">
+<input type="text" placeholder="">
+</div><!-- col1 close -->
+
+
+<p style="margin-top:40px; margin-left:10px;">Disc():</p>
+<div class="col" style="margin-top:40px; margin-left:-130px;">
+<input type="text" placeholder="">
+</div><!-- col2 close -->
+
+<p style="margin-top:40px; margin-left:45px;">Disc():</p>
+<div class="col" style="margin-top:40px; margin-left:-138px;">
+<input type="text" placeholder="">
+</div><!-- col3 close -->
+
+<p  style="margin-top:40px; margin-left:15px;">Consult Final amount</p>
+<div class="col" style="margin-left:-34px; margin-top:40px;">
+<input type="text" placeholder="">
+</div>   <!-- col4 close -->
+
+
+ </div>   <!-- row 3 close -->
+ 
+ <div class="row row-col-4 ">
+ 
+ <p style="margin-left:-1340px; margin-top:80px;">TotalAmount:</p>
+<div class="col" style="margin-left:-85px;  margin-top:80px;">
+<input type="text" placeholder="">
+</div>  <!-- col1 close -->
+
+
+
+<p style="margin-top:80px; margin-left:39px;">Disc():</p>
+<div class="col" style="margin-top:80px;  margin-left:-150px;">
+<input type="text" placeholder="">
+
+</div>
+
+<!-- col2 close -->
+<p style="margin-top:80px; margin-left:30px;" >Disc(:)</p>
+<div class="col" style="margin-top:80px; margin-left:-140px;">
+<input type="text" placeholder="">
+</div> <!-- col3 close -->
+
+<p style="margin-top:80px; margin-left:5px;">TotalBill Amount</p>
+<div class="col" style="margin-top:80px; margin-left:-28px;">
+
+<input type="text" placeholder="">
+
+</div>
+ <!-- col4 close -->
+ 
+ 
+ </div>  <!-- row 3 -->
+ 
+ <div class="row row-col-4 ">
+ 
+ 
+<p style="margin-left:-1500px; margin-top:120px;">Amt Received:</p>
+<div class="col" style="margin-top:120px; margin-left:-98px;">
+<input type="text" placeholder="">
+</div>  <!-- col1 -->
+
+
+<p style="margin-top:120px; margin-left:-20px; ">Change_Given</p>
+<div class="col" style="margin-top:120px; margin-left:-130px;">
+<input type="text" placeholder="">
+</div> <!-- col2 -->
+
+
+<p style="margin-top:120px;  margin-left:-20px;">Balance</p>
+<div class="col" style="margin-top:120px; margin-left:-150px;">
+<input type="text" placeholder="">
+</div>   <!-- col3 close -->
+
+
+<p style="margin-top:120px; margin-left:-10px;">Status</p>
+<div class="col" style="margin-top:120px; margin-left:-10px;">
+<input type="text" placeholder="">
+</div>
+
+
+
+ 
+ 
+ 
+  
+  
+  
+  
+  
+  
+  </div>  <!-- row 4 close last  -->
+  
+  </div>  <!-- small flex ends 3-->
+  </div>  <!-- display -flex ends3 -->
+
+</div>  <!-- small cont close 3 -->
+</div>   <!-- large container close 3 -->
+ 
+ 
+
+
+   
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

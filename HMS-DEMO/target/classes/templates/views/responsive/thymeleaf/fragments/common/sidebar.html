@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="sidebar">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+
+body {font-family: "Lato", sans-serif;}
+
+.sidebar {
+  height: 150%;
+  width: 60px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  padding-bottom: 20px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+
+
+
+
+</style>
+</head>
+
+  
+<body>
+
+<section th:fragment="sidebar">
+
+
+<div class="sidebar">
+  <a href="#home"><i class="fa fa-fw fa-wheelchair" style="color: white;"></i> </a>
+  <a href="#services"><i class="fa fa-fw fa-flask" style="color: white;"></i> </a>
+  <a href="#clients"><i class="fa fa-fw fa-globe" style="color: white;"></i> </a>
+  <a href="#contact"><i class="fa fa-fw fa-bed"  style="color: white;"></i> </a>
+   <a href="#contact"><i class="fa fa-fw fa-square-plus"  style="color: white;"></i> </a>
+    <a href="#contact"><i class="fa fa-fw fa-table"  style="color: white;"></i> </a>
+     <a href="#contact"><i class="fa fa-fw fa-print"  style="color: white;"></i> </a>
+      <a href="#contact"><i class="fa fa-fw fa-user"  style="color: white;"></i> </a>
+       <a href="#contact"><i class="fa fa-fw fa-copy"  style="color: white;"></i> </a>
+        <a href="#contact"><i class="fa fa-fw fa-lock"  style="color: white;"></i> </a>
+         <a href="#contact"><i class="fa fa-fw fa-calendar"  style="color: white;"></i> </a>
+   
+   
+</div>
+
+
+
+
+
+
+
+</section>
+
+</body>
+</html>

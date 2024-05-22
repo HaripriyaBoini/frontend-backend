@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+   xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${pageTitle}"></title>
+</head>
+<body>
+<form action="#" th:action="@{/search/result}" method="post" th:object="${searchcriteria1}">
+
+<input type="text" placeholder="Contact Number" th:name="patientContactNumber">
+<input type="submit" value="Search">
+
+
+</form>
+
+
+<div th:if="${searchcriteria1== null}"></div>
+<div th:unless="${searchcriteria1== null}">
+<p th:text="${searchcriteria1.patientContactNumber}"></p>
+
+
+</div>
+
+
+
+
+
+</body>
+</html>

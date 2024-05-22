@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  
+
+<style>
+
+.container {
+     background-color:#ADD8E6;
+      max-width: 450px; 
+      margin-left: 10px; 
+      margin-right: auto; 
+      margin-top:50px;
+      padding:150px;
+    }
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+
+
+
+
+
+
+  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#personal">personal Info</a></li>
+    <li><a data-toggle="tab" href="#appointmentdetails">Appointmentdetails</a></li>
+    <li><a data-toggle="tab" href="#fees">feedetails</a></li>
+    
+  </ul>
+
+  <div class="tab-content">
+    <div id="personal" class="tab-pane fade in active">
+       <h3 style="margin-left:20px;">Personal info</h3>
+      
+      <div class="container my-5 border">
+      <div class="row row-col-2 "> 
+    <div class="col" style="margin-top:-120px;" ><!-- column 1 -->
+                                    
+<select style="margin-left:-100px; width:120px;">
+           <option>Title</option>
+           <option>Mr.</option>
+           <option>Ms.</option>
+           <option>miss</option>  
+      </select>
+     </div> <!-- col1 ends -->
+     <div class="col" style="margin-left:40px; margin-top:-22px;">
+     
+     <select style="width:120px;">
+     <option>Gender</option>
+           <option>Mr.</option>
+           <option>Ms.</option>
+           <option>miss</option>  
+      </select>
+     
+     </div><!-- col2 close -->
+     </div>      <!--  1st rows close -->
+     
+      <div class="row row-col-2 "> 
+      <div class="col" style="margin-top:-90px; ">
+      <input type="text"  style= "margin-left:-100px; width:140px;" placeholder="new patienname">
+       
+      
+      </div><!-- 1st column -->
+      <div class="col" style="margin-top:-26px;" >
+      <input type="text"  style= "margin-left:50px; width:140px;" placeholder="Last Name">
+      
+      
+      </div><!-- 2nd column -->
+      
+      </div><!-- 2nd rows close -->
+      
+     <div class="row row-col-4 "> 
+      <div class="col" style="margin-top:-55px; margin-left:-75px;" >
+          <form action="/action_page.php">
+  <label for="birthday"></label>
+  <input type="date" style="width:120px; margin-left:-30px;" id="birthday" name="birthday">
+</form>
+     </div><!-- 1st col close -->
+      
+      <div class="col" style="margin-top:-25px;">
+      <input type="text" style="width:70px; margin-left:30px;" placeholder="Years">
+      
+      </div>  <!-- 2nd col close -->
+      
+      <div class="col" style="margin-top:-25px;">
+      <input type="text" style="width:70px; margin-left:110px;" placeholder="Months">
+      
+      </div> <!-- 3rd col close -->
+       <div class="col" style="margin-top:-26px;">
+      <input type="text" style="width:70px; margin-left:190px;" placeholder="Days">
+      
+      </div><!-- 4th col close -->
+      
+      </div>  <!-- 3rd row close -->
+     <div class="row row-col-2 ">
+     <div class="col" style="margin-top:-20px;" ><!-- column 1 -->
+                                    
+<select style="margin-left:-100px; width:180px;">
+           <option>Parents husband name</option>
+           <option></option>
+           <option></option>
+           <option></option>  
+      </select>
+     </div>   <!-- col1 close -->
+      <div class="col" style="margin-top:-25px;" >
+      <input type="text"  style= "margin-left:90px; width:150px;" placeholder="ParentHusband Name">
+      
+      
+      </div>  <!-- 2nd col close -->
+      </div><!-- 4th row close -->
+        <div class="row row-col-2 "> 
+    <div class="col" style="margin-top:10px;"> <!-- column 1 -->
+                                    
+<select style="margin-left:-80px; width:120px;">
+           <option>Religion</option>
+           <option>Hindu</option>
+           <option>muslim</option>
+           <option>christian</option>  
+      </select>
+     </div> <!-- col1 ends -->
+     <div class="col" style="margin-left:50px; margin-top:-23px;">
+     
+     <select style="width:120px;">
+     <option>Marital Status</option>
+           <option>married</option>
+           <option>single</option>
+            
+      </select>
+     
+     </div><!-- col2 close -->
+     </div> <!-- 5th row close -->
+     
+      <div class="row row-col-2 "> 
+    <div class="col" style="margin-top:10px;" ><!-- column 1 -->
+                                    
+<select style="margin-left:-80px; width:120px;">
+           <option>Country</option>
+           <option>Indian</option>
+           <option>japan</option>
+           <option>uk</option>  
+      </select>
+     </div> <!-- col1 ends -->
+     <div class="col" style="margin-left:50px; margin-top:-23px;">
+     
+     <select style="width:120px;">
+     <option>Blood Group</option>
+           <option>A</option>
+           <option>B</option>
+            <option>o</option>
+             <option>AB</option>
+            
+      </select>
+     
+     </div><!-- col2 close -->
+     </div>
+     
+      
+      </div><!-- container fluid -->
+      
+    </div>      <!-- fade close -->
+    <div id="appointmentdetails" class="tab-pane fade">
+      
+      <h3 style="margin-left:20px; margin-bottom:10px;">appointment details</h3>
+      
+      <div class="container my-5 border">
+      <div class="row row-col-1 ">
+      <div class="col" style="margin-top:-120px;" ><!-- column 1 -->
+                                    
+<select style="margin-left:-100px; width:350px;">
+           <option>_Select Location__</option>
+           <option>hyd</option>
+           <option>pune</option>
+           <option>chennai</option>  
+      </select>
+     </div> <!-- col1 close -->
+     </div><!-- row 1 close -->
+     
+      <div class="row row-col-2 ">
+     <div class="col" style="margin-top:-85px; margin-left:-75px;" >
+          <form action="/action_page.php">
+  <label for="birthday"></label>
+  <input type="date" style="width:190px; margin-left:-30px;" id="birthday" name="birthday">
+</form>
+     </div>  <!-- col1 close -->
+     
+     <div class="col" style="margin-top:-26px;">
+      <input type="text" style="width:140px; margin-left:110px;" placeholder="Token">
+      
+      </div> <!-- col2 close -->
+      </div>  <!-- row2 close -->
+      
+       <div class="row row-col-1 ">
+       <div class="col" style="margin-top:-45px;" ><!-- column 1 -->
+                                    
+<select style="margin-left:-100px; width:350px;">
+           <option>_Select Consultant_</option>
+           <option>hyd</option>
+           <option>pune</option>
+           <option>chennai</option>  
+      </select>
+     </div> <!-- only col -->
+     </div> <!-- 3rd row close -->
+     
+      <div class="row row-col-2 ">
+      <div class="col" style="margin-top:-10px;">
+      <input type="text" style="width:190px; margin-left:-100px;" placeholder="Doctors code">
+      
+      </div><!-- col1 -->
+      
+      <div class="col" style="margin-top:-26px;">
+      <input type="text" style="width:140px; margin-left:110px;" placeholder="specialization">
+      
+      </div><!-- col2 close -->
+      </div> <!-- -row close -->
+      
+       </div><!-- container of appoint -->
+       
+       
+  </div><!-- appointment pane details close -->
+    
+    <div id="fees" class="tab-pane fade">
+     <h3 style="margin-left:20px; margin-bottom:10px;">feedetails</h3>
+      
+      
+      <div class="container my-5 border">
+      
+      <div class="row row-col-4 ">
+      <div class="col" style="margin-top:-95px;"><p style ="margin-left:-110px;">Registration fees</p>
+      <input type="text" style="width:120px; margin-left:-120px; padding:8px;" placeholder="Registration fee">
+      
+      </div> <!-- col1 close -->
+      
+      <div class="col" style="margin-top:-40px;">
+      <input type="text" style="width:70px; margin-left:10px; padding:8px;" placeholder="Disc">
+      
+      </div><!-- col2 close -->
+      
+      <div class="col" style="margin-top:-40px;">
+      <input type="text" style="width:70px; margin-left:90px; padding:8px;" placeholder="Disc$">
+      
+      </div><!-- col3 close -->
+      
+      <div class="col" style="margin-top:-40px;"><p style="margin-top:-70px; margin-left:190px;">R.finalamount</p>
+      <input type="text" style="width:110px; margin-left:170px; padding:8px;" placeholder="Disc$">
+      
+      </div><!-- col4 close -->
+      </div>   <!--  1st row close-->
+      
+            
+      <div class="row row-col-4 ">
+      <div class="col" style="margin-top:10px;">
+      <input type="text" style="width:120px; margin-left:-120px; padding:8px;" placeholder="consultation  fee"><p style="margin-top:-70px; margin-left:-110px;">consultant fees</p>
+      
+      </div> <!-- col1 close -->
+      
+      <div class="col" style="margin-top:1px;">
+      <input type="text" style="width:70px; margin-left:10px; padding:8px;" placeholder="Disc">
+      
+      </div><!-- col2 close -->
+      
+      <div class="col" style="margin-top:-40px;">
+      <input type="text" style="width:70px; margin-left:90px; padding:8px;" placeholder="Disc$">
+      
+      </div><!-- col3 close -->
+      
+      <div class="col" style="margin-top:-40px;">
+      <input type="text" style="width:110px; margin-left:170px; padding:8px;" placeholder="Disc$"><p style="margin-top:-69px; margin-left:190px;">C.finalamount</p>
+      
+      </div><!-- col4 close -->
+      </div>   <!-- 2nd row close -->
+      
+      
+      <div class="row row-col-4 ">
+      <div class="col" style="margin-top:70px;">
+      <input type="text" style="width:120px; margin-left:-120px; padding:8px;" placeholder="Total amount"><p style="margin-top:-65px; margin-left:-110px;">Total amount</p>
+      
+      </div> <!-- col1 close -->
+      
+      <div class="col" style="margin-top:-2px;">
+      <input type="text" style="width:70px; margin-left:10px; padding:8px;" placeholder="Disc">
+      
+      </div><!-- col2 close -->
+      
+      <div class="col" style="margin-top:-40px;">
+      <input type="text" style="width:70px; margin-left:90px; padding:8px;" placeholder="Disc$">
+      
+      </div><!-- col3 close -->
+      
+      <div class="col" style="margin-top:-40px;">
+      <input type="text" style="width:110px; margin-left:170px; padding:8px;" placeholder="Disc$"><p style="margin-top:-60px; margin-left:190px;">Tot.Billamount</p>
+      
+      </div><!-- col4 close -->
+      </div><!-- 3rd row close -->
+      
+      
+      
+      <div class="row row-col-4 ">
+      <div class="col" style="margin-top:60px;">
+      <input type="text" style="width:120px; margin-left:-120px; padding:8px;" placeholder="Total amount"><p style="margin-top:-60px; margin-left:-110px;">Total amount</p>
+      
+      </div> <!-- col1 close -->
+      
+      <div class="col" style="margin-top:-10px;">
+      <input type="text" style="width:70px; margin-left:10px; padding:8px;" placeholder="Disc">
+      
+      </div><!-- col2 close -->
+      
+      <div class="col" style="margin-top:-40px;">
+      <input type="text" style="width:70px; margin-left:90px; padding:8px;" placeholder="Disc$">
+      
+      </div><!-- col3 close -->
+      
+      <div class="col" style="margin-top:-40px;">
+      <input type="text" style="width:110px; margin-left:170px; padding:8px;" placeholder="Disc$"><p style="margin-top:-60px; margin-left:190px;">Tot.Billamount</p>
+      
+      </div><!-- col4 close -->
+      </div><!-- 4th row close -->
+      
+      
+      
+      
+      
+      
+      
+      
+      </div><!-- container close -->
+     
+     </div><!--fees  tabe pane close-->
+     
+     
+    
+      
+      </div><!-- tablecontent -->
+
+      
+      
+  
+
+
+
+</body>
+</html>
